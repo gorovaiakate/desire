@@ -1,0 +1,67 @@
+html,
+body {
+	height: 100%;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 27px;
+	overflow-x: hidden;
+	min-width: 300px;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-fluid{
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.slick-dots{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li{
+    margin: 0 29px;
+    width: auto;
+    height: auto;
+  }
+  button{
+    width: 8px;
+    height: 8px;
+    background-color: $bg;
+    border-radius: 50%;
+    font-size: 0;
+    border: none;
+    padding: 0;
+  }
+  li.slick-active{
+    button{
+      background-color: #FFEF35;
+    }
+  }
+}
+.toast{
+  background-color: #363838;
+}
+
+
+
+
+
+
