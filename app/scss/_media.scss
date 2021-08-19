@@ -81,6 +81,9 @@
     .header__btn{
         display: none;
     }
+    .rightside-menu{
+        display: none;
+    }
     .menu{
         &__list-item{
             margin-left: 10px;
@@ -436,6 +439,9 @@
         }
     }
     .blog-one{
+        &__links{
+            display: none;
+        }
         &__link span{
             display: none;
         }
