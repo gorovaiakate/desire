@@ -143,7 +143,7 @@
               <div class="blog-one__comments">
                 <h4 class="blog-one__comments-title">Comments</h4>
                 <?php 
-                  $connect = mysqli_connect('localhost', 'root', '', 'desire');
+                  $connect = mysqli_connect('localhost', 'cv89914_desire', 'ty7r8ZzW', 'cv89914_desire');
                   if (isset($_GET['page'])){
                       $page = $_GET['page'];
                   } else {
@@ -164,7 +164,7 @@
                         $result .= '<div class="blog-one__comments-date">' . date_format($date, 'F d, Y') . '</div>';
                         $result .= '<p class="blog-one__comments-text">' . $elem['comment'] . '</p>';
                       $result .= '</div>';
-                      $result .= '<button class="blog-one__reply">Reply</button>';
+                      // $result .= '<button class="blog-one__reply">Reply</button>';
                     $result .= '</div>';
                   }
                   echo $result;

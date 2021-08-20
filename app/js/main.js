@@ -95,7 +95,7 @@ $(function () {
       
         $.ajax({
             type: "POST",
-            url: "/php/sendmail.php",
+            url: "php/sendmail.php",
             data: str,
             success: function(msg) {
                 if(msg == 'OK') {
@@ -120,6 +120,27 @@ $(function () {
                 } else {
                 result = msg;
                 }
+            },
+            error: function(msg){
+                toastr.options = {
+                "closeButton": false,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": false,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+                }
+
+                toastr["error"]("Сообщение не отправлено!")
             }
         });
         return false;
@@ -129,7 +150,7 @@ $(function () {
       
         $.ajax({
             type: "POST",
-            url: "/php/comment.php",
+            url: "php/comment.php",
             data: str1,
             success: function(cmt) {
                 if(cmt == 'OK') {
@@ -155,6 +176,27 @@ $(function () {
                 } else {
                     result = cmt; 
                 }
+            },
+            error: function(cmt){
+                toastr.options = {
+                "closeButton": false,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": false,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+                }
+
+                toastr["error"]("No comment added!")
             }
         });
         return false;

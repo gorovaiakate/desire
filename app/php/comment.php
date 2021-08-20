@@ -1,5 +1,5 @@
 <?php
-    $connect = mysqli_connect('localhost', 'root', '', 'desire');
+    $connect = mysqli_connect('localhost', 'cv89914_desire', 'ty7r8ZzW', 'cv89914_desire');
 
     $post2 = (!empty($_POST)) ? true : false;
     $comment = $_POST['comment'];
